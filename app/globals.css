@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #ccc transparent; /* Transparent track and thumb */
+}
+
+.user__message {
+    position: relative;
+}
+
+.user__message:before {
+    content: '';
+    position: absolute;
+    background: url(user-message.svg) no-repeat;
+    width: 16px;
+    height: 18px;
+    bottom: -1px;
+    right: -5px;
+    z-index: -1;
+}
+
+.ai__message {
+    position: relative;
+}
+
+.ai__message:before {
+    content: '';
+    position: absolute;
+    background: url(ai-message.svg) no-repeat;
+    width: 16px;
+    height: 18px;
+    bottom: -1px;
+    left: -5px;
+    z-index: -1;
+}
+
+.typing-dots:before {
+    animation: typing_dots 1s infinite;
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 10px;
+    left: -5px;
+}
+  
+@keyframes typing_dots {
+    0% {
+        content: "";
+    }
+    10% {
+        content: ".";
+    }
+    20% {
+        content: "..";
+    }
+    30% {
+        content: "...";
+    }
+    40% {
+        content: ".";
+    }
+    50% {
+        content: "..";
+    }
+    60% {
+        content: "...";
+    }
+    70% {
+        content: ".";
+    }
+    80% {
+        content: "..";
+    }
+    90% {
+        content: "...";
+    }
+    100% {
+        content: ".";
+    }
+}
