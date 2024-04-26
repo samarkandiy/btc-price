@@ -7,9 +7,6 @@ const openai = new OpenAI({
   baseURL: 'https://api.groq.com/openai/v1/',
 });
 
-// IMPORTANT! Set the runtime to edge
-export const runtime = 'edge';
-
 export async function POST(req: Request) {
   const { messages } = await req.json();
 
