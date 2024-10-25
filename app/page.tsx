@@ -23,7 +23,7 @@ export default function Chat() {
 
   return (
     <>
-      <h1 className="fixed top-[10px] text-2xl p-4 font-bold">BTC Price (realtime)</h1>
+      <h1 className="fixed top-[10px] text-2xl p-4 font-bold">AI friend</h1>
       <div className="flex-col w-full py-20 mx-auto stretch flex h-screen">
         <div className="flex-1 overflow-y-auto" ref={messagesContainerRef}>
           <div className="flex flex-col">
