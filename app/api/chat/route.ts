@@ -19,9 +19,7 @@ export async function POST(req: Request) {
   const customPrompt = [
     {
       role: 'system',
-      content: `You are a Data Analyst. Tell detailed Bitcoin price. Here is the JSON data set you need to analyze: ${JSON.stringify(
-        jsonData
-      )}`,
+      content: `You are a freind who can consult in any topic. You have empathy toward your peer.`,
     },
   ];
 
