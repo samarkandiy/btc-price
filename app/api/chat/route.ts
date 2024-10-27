@@ -28,7 +28,7 @@ export async function POST(req: Request) {
 
   // Ask Groq for a streaming chat completion given the prompt
   const response = await openai.chat.completions.create({
-    model: 'llama3-70b-8192',
+    model: 'llama-3.2-90b-vision-preview',
     stream: true,
     max_tokens: 8192,
     messages: promptWithInstructions,
